@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans&family=Play&family=Poppins:wght@300&family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+/*
+1:#000000
+2:#14213D
+3:#FCA311
+4:#E5E5E5
+5:#FFFFFF
+1 y 2 son el 60% , 4 y 5 el 30% y el 3 es el 10%
+*/
+
+header{
+    box-sizing: border-box;
+    background-color: #14213D;
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+header div{
+    box-sizing: border-box;
+    color: #FFFFFF;
+    min-width: 20%;
+    display: flex;
+    justify-content: space-between;
+}    
+
+header div img{
+    background-color: #FCA311;
+    border-radius: 100%;
+}
+
+header div .titulo{
+    font-family: 'Merriweather' , sans-serif;
+    margin: auto;
+}
+
+header .nav{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #14213D;
+}
+
+header .nav li{
+    float: right;
+}
+
+li.dropdown {
+    display: inline-block;
+  }
+
+header .nav li a,.dropbtn{
+    display: inline-block;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 25px 30px;
+    text-decoration: none;
+    border-left: 1px solid #FFFFFF;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+header .nav li a:hover, .dropdown:hover .dropbtn{   background-color: #03102C;}
+
+header .nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+  }
+
+header .nav .dropdown  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+header .nav .dropdown .dropdown-content a:hover {   
+    border-left: none;
+    background-color: #03102C;
+    color: #FFFFFF;
+    border-bottom:3px solid #FCA311 ;
+}
+
+header .nav .dropdown:hover .dropdown-content {
+display: block;}
+
+/*
+    carta de presentacion
+*/
+
+.contenedorPresentacion{
+    width: 100%;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+}
+
+.contenedorPresentacion .imagen1,.imagen2,.imagen3{
+    display: inline-block;
+    width: 33.33%;
+    height: 700px;
+}
+
+.contenedorPresentacion .imagen1 img{
+    object-fit:cover;
+    height: 700px;
+    width: 100%;
+}
+
+.contenedorPresentacion .imagen2 img{
+    object-fit:cover;
+    height: 700px;
+    width: 100%;
+}
+
+.contenedorPresentacion .imagen2 .textoC{
+    position: absolute;
+    width: 33%;
+    text-align: center;
+}
+
+.contenedorPresentacion .imagen2 .textoC .titulo{
+    color: #FFFFFF;
+    background-color: #14213D;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin-top: 15%;
+}
+
+.contenedorPresentacion .imagen2 .textoC .texto{
+    margin-top: 30%;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    background-color: rgb(20, 33, 61 , .5);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contenedorPresentacion .imagen3 img{
+    object-fit:cover;
+    height: 700px;
+    width: 100%;
+}
+
+/*
+    carrusel
+*/
+
+.contenedorCalesita{
+    background-color: #14213D;
+}
