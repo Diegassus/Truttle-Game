@@ -186,6 +186,7 @@ header .nav .dropdown:hover .dropdown-content {
 .contenedorCalesita {
   background-color: #14213d;
   width: 100%;
+  padding-bottom: 80px;
 }
 
 .contenedorCalesita .slider{
@@ -223,4 +224,16 @@ header .nav .dropdown:hover .dropdown-content {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.sobreNosotros{
+    background-color: #e5e5e5;
+    color: #03102c;
+}
+
+.sobreNosotros .titulo{
+    text-align: center;
+  padding: 20px 0px;
+  font-family: sans-serif;
+  font-size: 2em;
 }

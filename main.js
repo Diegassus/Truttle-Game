@@ -17,12 +17,37 @@ slider[6] =
 
 var index=1;
 
+// texto del slider
+var texto = new Array();
+
+texto[1] =
+  "Para Bioshock Infinite: Burial at de sea 2 , nuestros aportes comunitarios permitieron el desarrollo de booker en este DLC";
+
+texto[2] =
+  "En Dirt RALLY 2.0 ayudamos a crear el entrono climatico y condiciones de pista!"; //dirt
+texto[3] =
+  "Una obra de arte, gracias a la comunidad logramos encontrar una experiencia de usuario en el desarrollo del combate increible"; //tlou
+texto[4] =
+  "En el remake de Resident Evil 3, la comunidad aporto muchos fanarts de los cuales se tomo como concepto para el ambiente"; //hoi4
+texto[5] =
+  "Para Uncharted 4 nuestro equipo se ocupo de la seleccion de escenarios y parte de la historia secundaria"; //uncharted 4
+texto[6] =
+  "Para la obra maestra de de Zero Dawn, el equipo el equipo escribio el lore detras de cada archivo de informacion coleccionable"; //horizon zd
+
+var parrafo = document.createElement('p');
+parrafo.setAttribute('class','informacion');
+
+
 function mostrarDer(i) {
     index+=i;
     if(index>6){
         index=1;
     }
   document.carru.src = slider[index];
+  var text= document.createTextNode(texto[index]);
+  parrafo.appendChild(text);
+  var padre = document.getElementById('infoCarru');
+  padre.parentNode.replaceChild(parrafo,padre);
 };
 
 function mostrarIzq(i) {
@@ -31,4 +56,9 @@ function mostrarIzq(i) {
         index=6;
     }
   document.carru.src = slider[index];
+  var text= document.createTextNode(texto[index]);
+  parrafo.appendChild(text);
+var padre = document.getElementById('infoCarru');
+  padre.parentNode.replaceChild(parrafo,padre);
 };
+
