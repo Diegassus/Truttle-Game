@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="JavaScript" href="main.js">
+    <script src="main.js"></script>
     <title>Turttle Game</title>
 </head>
 
@@ -46,18 +46,27 @@
             <img src="https://www.wallpapers13.com/wp-content/uploads/2016/03/Star-Wars-The-Force-Unleashed-Video-Game-Ultra-HD-Wallpapers-1920x1440.jpg"
                 alt="Star-Wars-The-Force-Unleashed-Video-Game-Ultra-HD-Wallpapers-1920x1440">
         </div>
-        <div class="imagen3"><img src="https://asset.vg247.com/bioshock_infinite_burial_at_sea_epiosde_2.jpg/BROK/thumbnail/1200x1200/quality/100/bioshock_infinite_burial_at_sea_epiosde_2.jpg" alt="bioshock_infinite_burial_at_sea_epiosde_2"></div>
+        <div class="imagen3"><img
+                src="https://asset.vg247.com/bioshock_infinite_burial_at_sea_epiosde_2.jpg/BROK/thumbnail/1200x1200/quality/100/bioshock_infinite_burial_at_sea_epiosde_2.jpg"
+                alt="bioshock_infinite_burial_at_sea_epiosde_2"></div>
     </div>
 
     <!-- Carrusel -->
+    <h1 class="tituloJuego">Conoce las obras en las que participampos</h1>
 
     <div class="contenedorCalesita">
-        <h1 class="titulo">Conoce nustras colaboraciones</h1>
         <div class="slider">
-            <img class="carru" src="" alt="Videojuego">
-            <p id="infoCarru" class="informacion"></p>
+            <div class="izquierda" onclick="mostrarIzq(1)"></div>
+            <div class="contFoto">
+                <img name="carru" src="https://www.teahub.io/photos/full/297-2979988_bioshock-infinite-burial-at-sea-episode-2.jpg" alt="Videojuego">
+                <p id="infoCarru" class="informacion"></p>
+            </div>
+            <div class="derecha" onclick="mostrarDer(1)"></div>
         </div>
     </div>
+
+
+
 </body>
 
 </html>
