@@ -144,6 +144,7 @@ header .nav .dropdown:hover .dropdown-content {
 }
 
 .contenedorPresentacion .imagen2 .textoC .titulo {
+  font-family: sans-serif;
   color: #ffffff;
   background-color: #14213d;
   display: inline-block;
@@ -190,6 +191,7 @@ header .nav .dropdown:hover .dropdown-content {
 }
 
 .contenedorCalesita .slider{
+  
     background-color: aqua;
     width: 70%;
     height: 40em;
@@ -200,6 +202,7 @@ header .nav .dropdown:hover .dropdown-content {
 }
 
 .contenedorCalesita .slider .izquierda{
+  border: 1px solid #e5e5e5 ;
     background-color: #03102c;
     height: 100%;
     min-width: 8%;
@@ -208,6 +211,7 @@ header .nav .dropdown:hover .dropdown-content {
 }
 
 .contenedorCalesita .slider .derecha{
+  border: 1px solid #e5e5e5 ;
     background-color: #03102c;
     height: 100%;
     min-width: 8%;
@@ -216,8 +220,11 @@ header .nav .dropdown:hover .dropdown-content {
 }
 
 .contenedorCalesita .slider .contFoto{
+  border: 1px solid #e5e5e5;
+  position: relative;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .contenedorCalesita .slider .contFoto img{
@@ -226,14 +233,42 @@ header .nav .dropdown:hover .dropdown-content {
     object-fit: cover;
 }
 
+.contenedorCalesita .slider .contFoto #infoJuego{
+  position: absolute;
+  background-color: rgb(20, 33, 61, 0.7);
+  height: 80px;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: auto;
+  border:1px solid #e5e5e5;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #e5e5e5;
+  padding: 5% ;
+}
+
 .sobreNosotros{
     background-color: #e5e5e5;
     color: #03102c;
 }
 
 .sobreNosotros .titulo{
-    text-align: center;
+  text-align: center;
   padding: 20px 0px;
   font-family: sans-serif;
   font-size: 2em;
+}
+
+.sobreNosotros section{
+  color: #03102c;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 30px 50px;
+  font-weight: 500;
+}
+
+.sobreNosotros section p{
+  margin: 10px 0px;
 }

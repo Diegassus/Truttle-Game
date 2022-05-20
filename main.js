@@ -15,7 +15,7 @@ slider[5] =
 slider[6] =
   "https://images.pushsquare.com/8b917a36c5c4b/horizon-zero-dawn-ps4-1.large.jpg"; //horizon zd
 
-var index=1;
+var index = 1;
 
 // texto del slider
 var texto = new Array();
@@ -34,31 +34,38 @@ texto[5] =
 texto[6] =
   "Para la obra maestra de de Zero Dawn, el equipo el equipo escribio el lore detras de cada archivo de informacion coleccionable"; //horizon zd
 
-var parrafo = document.createElement('p');
-parrafo.setAttribute('class','informacion');
-
-
 function mostrarDer(i) {
-    index+=i;
-    if(index>6){
-        index=1;
-    }
+  index += i;
+  if (index > 6) {
+    index = 1;
+  }
   document.carru.src = slider[index];
-  var text= document.createTextNode(texto[index]);
-  parrafo.appendChild(text);
-  var padre = document.getElementById('infoCarru');
-  padre.parentNode.replaceChild(parrafo,padre);
-};
+  var padreViejo = document.getElementById("infoJuego");
+  padreViejo.innerHTML = texto[index];
+}
+
+/*
+var parrafoNuevo = document.createElement("p");
+  parrafoNuevo.setAttribute((id = "class"), "informacion");
+  var text = document.createTextNode(texto[index]);
+  parrafoNuevo.appendChild(text);
+  var padreViejo = document.getElementById("infoJuego");
+  padreViejo.parentNode.replaceChild(parrafoNuevo, padreViejo);
+
+
+  padding: 30px ;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #e5e5e5;
+*/ 
+
 
 function mostrarIzq(i) {
-    index-=i;
-    if(index<1){
-        index=6;
-    }
+  index -= i;
+  if (index < 1) {
+    index = 6;
+  }
   document.carru.src = slider[index];
-  var text= document.createTextNode(texto[index]);
-  parrafo.appendChild(text);
-var padre = document.getElementById('infoCarru');
-  padre.parentNode.replaceChild(parrafo,padre);
-};
-
+  var padreViejo = document.getElementById("infoJuego");
+  padreViejo.innerHTML = texto[index];
+}
