@@ -27,6 +27,10 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
+.navRes {
+  display: none;
+}
+
 header div {
   box-sizing: border-box;
   color: #ffffff;
@@ -81,98 +85,158 @@ header .nav li a:hover,
     diseño carta
 */
 
-.consola{
-    margin: auto;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.consola {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.consola .carta{
+.consola .carta {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 225px;
+  height: auto;
+  margin: 10px;
+}
+
+.consola .carta img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.consola .carta .textContainer h1 {
+  font-family: sans-serif;
+}
+
+.consola .carta .textContainer {
+  margin: 10px 0px;
+}
+
+.consola .carta .textContainer p {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #03102c;
+  padding: 15px;
+  background-color: #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.consola .carta .textContainer a {
+  font-family: sans-serif;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #03102c;
+  background-color: #fca311;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#playstation {
+  background-image: url(https://fondosmil.com/fondo/22852.jpg);
+}
+
+#pc {
+  background-image: url(https://cutewallpaper.org/23/technology-4k-wallpaper/2570811559.jpg);
+}
+
+#xbox {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/db40f714-2618-442a-9810-2bd6085e364a/d7q24u8-d2ce4148-17e7-4957-bc22-20ff62cb9ec5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RiNDBmNzE0LTI2MTgtNDQyYS05ODEwLTJiZDYwODVlMzY0YVwvZDdxMjR1OC1kMmNlNDE0OC0xN2U3LTQ5NTctYmMyMi0yMGZmNjJjYjllYzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xWEI_eePccDnOQ0yLl8fwZjGEAgUi3Nn_DMGJUdmLQc);
+}
+
+#nintendo {
+  background-image: url(https://tecnoticias.net/wp-content/uploads/2021/04/Nintendo-tiene-la-intencion-de-crear-mas-franquicias-nuevas-en.jpg);
+}
+
+footer {
+  background-color: #03102c;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+footer img {
+  margin-top: 30px;
+  background-color: #fca311;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+footer p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 30px 0px;
+}
+
+footer nav {
+  margin: auto;
+  width: 15%;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav a {
+  color: #e5e5e5;
+}
+
+@media screen and (max-width: 800px) {
+  .consola .carta {
     background-color: #ffffff;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    max-width: 225px;
-    height: auto;
-    margin: 10px;
-}
-
-.consola .carta img{
-    width: 100%;
-    object-fit: cover;
-}
-
-.consola .carta .textContainer h1{
-    font-family: sans-serif;
-}
-
-.consola .carta .textContainer{
-    margin: 10px 0px;
-}
-
-.consola .carta .textContainer p{
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #03102c;
-    padding: 15px;
-    background-color: #e5e5e5;
-    margin-bottom: 20px;
-}
-
-.consola .carta .textContainer a{
-    font-family: sans-serif;
-    margin-top: 15px;
-    text-decoration: none;
-    color: #03102c;
-    background-color: #fca311;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-#playstation{
-    background-image: url(https://fondosmil.com/fondo/22852.jpg);
-}
-
-#pc{
-    background-image: url(https://cutewallpaper.org/23/technology-4k-wallpaper/2570811559.jpg);
-}
-
-#xbox{
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/db40f714-2618-442a-9810-2bd6085e364a/d7q24u8-d2ce4148-17e7-4957-bc22-20ff62cb9ec5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RiNDBmNzE0LTI2MTgtNDQyYS05ODEwLTJiZDYwODVlMzY0YVwvZDdxMjR1OC1kMmNlNDE0OC0xN2U3LTQ5NTctYmMyMi0yMGZmNjJjYjllYzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xWEI_eePccDnOQ0yLl8fwZjGEAgUi3Nn_DMGJUdmLQc);
-}
-
-#nintendo{
-    background-image: url(https://tecnoticias.net/wp-content/uploads/2021/04/Nintendo-tiene-la-intencion-de-crear-mas-franquicias-nuevas-en.jpg);
-}
-
-footer{
-    background-color: #03102c;
-    text-align: center;
-    color: #e5e5e5;
+    max-width: 150px;
+    margin: 10px 5px;
   }
-  
-  footer img{
-    margin-top: 30px;
-    background-color: #fca311;
-    padding: 10px;
-    border-radius: 50%;
-  }
-  
-  footer p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 30px 0px;
-  }
-  
-  footer nav{
+
+  footer nav {
     margin: auto;
-    width: 15%;
+    width: 25%;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
   }
-  
-  footer nav a{
-    color: #e5e5e5;
+}
+
+@media screen and (max-width: 600px) {
+  header .nav {
+    display: none;
   }
+
+  .navRes{
+    display: block;
+    background-color: #14213d;
+    padding: 10px 0px;
+    border-top: #e5e5e5 1px solid;
+    border-bottom: #e5e5e5 1px solid;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .navRes a{
+    width: 33.4%;
+    display: inline-block;
+    border-left: none;
+  }
+
+  .consola .carta {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  footer nav {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

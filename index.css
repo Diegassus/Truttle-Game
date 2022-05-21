@@ -26,6 +26,9 @@ header {
   justify-content: space-between;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+.navRes {
+  display: none;
+}
 
 header div {
   box-sizing: border-box;
@@ -192,7 +195,7 @@ header .nav .dropdown:hover .dropdown-content {
 
 .contenedorCalesita .slider{
   
-    background-color: aqua;
+    background-color: #14213d;
     width: 70%;
     height: 40em;
     margin: auto;
@@ -301,4 +304,112 @@ footer nav{
 
 footer nav a{
   color: #e5e5e5;
+}
+
+
+@media screen and (max-width:1000px) {
+  .contenedorPresentacion .imagen1 ,.imagen3{
+    display: none;
+  }
+
+  .contenedorPresentacion .imagen2 {
+    width: 100%;
+  }
+
+  .contenedorPresentacion .imagen2 .textoC{
+    width: 50%;
+    left: 25%;
+  }
+
+  .contenedorCalesita .slider{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .nav {
+    display: none;
+  }
+
+  .navRes{
+    display: block;
+    background-color: #14213d;
+    padding: 10px 0px;
+    border-top: #e5e5e5 1px solid;
+    border-bottom: #e5e5e5 1px solid;
+    text-align: center;
+  }
+
+  .navRes a{
+    width: 33.4%;
+    display: inline-block;
+    border-left: none;
+  }
+
+  footer nav {
+    margin: auto;
+    width: 25%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  header .nav {
+    display: none;
+  }
+
+  .navRes{
+    display: block;
+    background-color: #14213d;
+    padding: 10px 0px;
+    border-top: #e5e5e5 1px solid;
+    border-bottom: #e5e5e5 1px solid;
+    text-align: center;
+  }
+
+  .navRes a{
+    width: 33.4%;
+    display: inline-block;
+    border-left: none;
+  }
+
+  footer nav {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contenedorPresentacion .imagen2 .textoC{
+    width: 80%;
+    left: 10%;
+  }
+
+  .contenedorCalesita .slider{
+    width: 90%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .contenedorCalesita .slider{
+    width: 98%;
+    height: 300px;
+  }
+
+  .contenedorCalesita .slider .izquierda{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 25%;
+  }
+
+  .contenedorCalesita .slider .derecha{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 25%;
+  }
 }
