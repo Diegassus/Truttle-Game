@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans&family=Play&family=Poppins:wght@300&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+/*
+1:#000000
+2:#14213D
+3:#FCA311
+4:#E5E5E5
+5:#FFFFFF
+1 y 2 son el 60% , 4 y 5 el 30% y el 3 es el 10%
+*/
+
+header {
+  box-sizing: border-box;
+  background-color: #14213d;
+  padding: 1% 5%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+header div {
+  box-sizing: border-box;
+  color: #ffffff;
+  min-width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header div img {
+  background-color: #fca311;
+  border-radius: 100%;
+}
+
+header div .titulo {
+  font-family: "Merriweather", sans-serif;
+  margin: auto;
+}
+
+header .nav {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #14213d;
+}
+
+header .nav li {
+  float: right;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+header .nav li a,
+.dropbtn {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  border-left: 1px solid #ffffff;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: large;
+}
+
+header .nav li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #03102c;
+}
+
+/*
+    diseño carta
+*/
+
+.consola{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.consola .carta{
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 225px;
+    height: auto;
+    margin: 10px;
+}
+
+.consola .carta img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.consola .carta .textContainer h1{
+    font-family: sans-serif;
+}
+
+.consola .carta .textContainer{
+    margin: 10px 0px;
+}
+
+.consola .carta .textContainer p{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #03102c;
+    padding: 15px;
+    background-color: #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.consola .carta .textContainer a{
+    font-family: sans-serif;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #03102c;
+    background-color: #fca311;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#playstation{
+    background-image: url(https://fondosmil.com/fondo/22852.jpg);
+}
+
+#pc{
+    background-image: url(https://cutewallpaper.org/23/technology-4k-wallpaper/2570811559.jpg);
+}
+
+#xbox{
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/db40f714-2618-442a-9810-2bd6085e364a/d7q24u8-d2ce4148-17e7-4957-bc22-20ff62cb9ec5.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RiNDBmNzE0LTI2MTgtNDQyYS05ODEwLTJiZDYwODVlMzY0YVwvZDdxMjR1OC1kMmNlNDE0OC0xN2U3LTQ5NTctYmMyMi0yMGZmNjJjYjllYzUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xWEI_eePccDnOQ0yLl8fwZjGEAgUi3Nn_DMGJUdmLQc);
+}
+
+#nintendo{
+    background-image: url(https://tecnoticias.net/wp-content/uploads/2021/04/Nintendo-tiene-la-intencion-de-crear-mas-franquicias-nuevas-en.jpg);
+}
+
+footer{
+    background-color: #03102c;
+    text-align: center;
+    color: #e5e5e5;
+  }
+  
+  footer img{
+    margin-top: 30px;
+    background-color: #fca311;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  footer p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px 0px;
+  }
+  
+  footer nav{
+    margin: auto;
+    width: 15%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer nav a{
+    color: #e5e5e5;
+  }
