@@ -220,16 +220,28 @@ footer nav a {
     display: inline-block;
     border-left: none;
   }
+  
+  .consola {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
   .consola .carta {
     background-color: #ffffff;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     max-width: 200px;
     height: auto;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .consola .carta h1{
+    font-size:medium;
   }
 
   footer nav {
@@ -240,3 +252,47 @@ footer nav a {
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .navRes{
+    display: block;
+    background-color: #14213d;
+    padding: 10px 0px;
+    border-top: #e5e5e5 1px solid;
+    border-bottom: #e5e5e5 1px solid;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .navRes a{
+    width: 33.4%;
+    display: inline-block;
+    border-left: none;
+  }
+  
+  .consola {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .consola .carta {
+    background-color: #ffffff;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5px;
+    height: 600px;
+  }
+
+  .consola .carta h1{
+    font-size:medium;
+  }
+
+}
+
