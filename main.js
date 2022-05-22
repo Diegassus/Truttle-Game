@@ -34,8 +34,8 @@ texto[5] =
 texto[6] =
   "Para la obra maestra de de Zero Dawn, el equipo el equipo escribio el lore detras de cada archivo de informacion coleccionable"; //horizon zd
 
-function mostrarDer(i) {
-  index += i;
+function mostrarDer() {
+  index ++;
   if (index > 6) {
     index = 1;
   }
@@ -44,24 +44,8 @@ function mostrarDer(i) {
   padreViejo.innerHTML = texto[index];
 }
 
-/*
-var parrafoNuevo = document.createElement("p");
-  parrafoNuevo.setAttribute((id = "class"), "informacion");
-  var text = document.createTextNode(texto[index]);
-  parrafoNuevo.appendChild(text);
-  var padreViejo = document.getElementById("infoJuego");
-  padreViejo.parentNode.replaceChild(parrafoNuevo, padreViejo);
-
-
-  padding: 30px ;
-  font-weight: 600;
-  font-family: sans-serif;
-  color: #e5e5e5;
-*/ 
-
-
-function mostrarIzq(i) {
-  index -= i;
+function mostrarIzq() {
+  index --;
   if (index < 1) {
     index = 6;
   }
@@ -69,3 +53,9 @@ function mostrarIzq(i) {
   var padreViejo = document.getElementById("infoJuego");
   padreViejo.innerHTML = texto[index];
 }
+
+function repetir(){
+  setInterval(mostrarDer,5000);
+}
+
+repetir();

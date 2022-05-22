@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contacto.css">
+    <script src="https://kit.fontawesome.com/05e35e8e14.js" crossorigin="anonymous"></script>
     <script src="contacto.js"></script>
     <title>Contactanos</title>
 </head>
@@ -34,18 +35,29 @@
     </div>
 
     <div class="contenedorFormulario">
-        <div class="foto"><img src="../Logo-Turttle.svg" alt=""></div>
+        <div class="foto" id="foto"><img src="../Logo-Turttle.svg" alt="" name="log" ></div>
         <div class="formulario">
-            <form id="formu" method="post">
+            <form id="formu" name="formu" >
                 <label for="nombre">Nombre*</label><br>
-                <input type="text" id="nombre" placeholder="Nombre" required><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" ><br>
                 <label for="correo">Correo Electronico*</label><br>
-                <input type="email" id="correo" placeholder="Correo" required><br>
+                <input type="email" id="correo" name="correo" placeholder="Correo" ><br>
                 <label for="texto">¡Envianos tu mensaje!*</label><br>
-                <textarea  id="texto" cols="30" rows="10" placeholder="Escribir mensaje..." required></textarea><br>
-                <input type="submit" class="enviar" value="Enviar" return="false">
+                <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Escribir mensaje..." ></textarea><br>
+                <input type="submit" class="enviar" value="Enviar" onclick="return validar()">
             </form>
         </div>
     </div>
+
+    <footer>
+        <p>
+            Siguenos en nuestras redes sociales para ver mas novedades
+        </p>
+        <nav>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/diego_d53/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        </nav>
+    </footer>
 </body>
 </html>

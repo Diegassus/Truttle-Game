@@ -42,18 +42,49 @@
 
 
 
-var nombre = document.getElementById("nombre");
-var correo = document.getElementById("correo");
-var texto = document.getElementById("texto");
-var form = document.getElementById("formu");
+// const nombre = document.getElementById("nombre");
+// const correo = document.getElementById("correo");
+// const texto = document.getElementById("texto");
+// const form = document.getElementById("formu");
 
-form.addEventListener("submit",e=>{
-    e.preventDefault();
-    let email = /^\w+@\w+(\.\w{3})$/;
-    if(nombre.value.length==0){
-        alert('El campo "nombre" es obligatorio');
+// form.addEventListener('submit',(e) =>{
+//     let email = /^\w+@\w+(\.\w{3})$/;
+//     if(nombre.value==null||nombre.value===""){
+//         alerta.push('El campo "nombre" es obligatorio');
+//     }
+
+//     if(!email.test(correo.value)){
+//         alert('El campo "Correo Electronico" es obligatorio');
+//     }
+//     e.preventDefault();
+// })
+
+
+function validar(){ //valido el nombre
+    var cambiar=false;
+    var nombre=document.formu.nombre.value.trim();
+    if (!nombre){
+    alert("Tiene que escribir su nombre")
+    document.formu.nombre.focus()
+    return false; 
     }
-    if(!email.test(correo.value)){
-        alert('El campo "Correo Electronico" es obligatorio');
+
+    var mail = document.formu.correo.value;
+    var patronmail = /^\w+@\w+(\.\w{2,4})$/;
+    if (!patronmail.test(mail)) {
+        alert('Ingrese una dirección Válida de Email');
+        document.formu.correo.focus()
+        return false;
     }
-})
+
+    var texto = document.formu.texto.value.trim();
+    if (texto===""||texto==null){
+        alert("Debe completar el campo de mensajes");
+        document.formu.texto.focus()
+        return false; 
+    }
+    
+    document.getElementById('foto').className='invertir';
+    alert('Gracias por contactarte con nosotros')
+    return false;
+}
