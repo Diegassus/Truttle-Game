@@ -211,9 +211,16 @@ header .nav .dropdown:hover .dropdown-content {
     min-width: 8%;
     border-top-left-radius: 22px;
     border-bottom-left-radius: 22px;
+    display: flex;
+}
+
+.contenedorCalesita .slider .izquierda #flecha1,#flecha2{
+  color: #fca311;
+margin: auto;
 }
 
 .contenedorCalesita .slider .derecha{
+  display: flex;
   border: 1px solid #e5e5e5 ;
     background-color: #03102c;
     height: 100%;

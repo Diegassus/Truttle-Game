@@ -1,64 +1,3 @@
-// function validar() {
-
-//   var nombre = document.formu.nombre.value.trim();
-//   if (!nombre) {
-//     alert('El campo de "nombre" es obligatorio');
-//     document.fvalida.nombre.focus();
-//     return false;
-//   };
-  
-//   var correo = document.formu.correo.value;
-//   var arroba = false;
-//   var punto = false;
-//   var apos = 0;
-//   var ppos = 0;
-
-//   for (var i=0; i<=correo.length; i++) {
-//     if (Entrada.charAt(i) == '@' ) {
-//         arroba = true;
-//         apos = i  ;
-//         }else if (Entrada.charAt(i) == '.') {
-//             punto = true;
-//             ppos = i;
-//         };
-//     };
-
-//   if ((arroba && punto) && (apos < ppos )){
-//       cambiarDom();
-//     return false;
-//     }else {  
-//         alert('Perdon, Ingrese una dirección Validad de Email')
-//          return false}
-// };
-
-// function cambiarDom(){
-//     var foto = document.getElementsByClassName('fa-solid fa-check');
-//     document.foto.src=foto;
-// }
-
-// aaa
-
-
-
-
-
-// const nombre = document.getElementById("nombre");
-// const correo = document.getElementById("correo");
-// const texto = document.getElementById("texto");
-// const form = document.getElementById("formu");
-
-// form.addEventListener('submit',(e) =>{
-//     let email = /^\w+@\w+(\.\w{3})$/;
-//     if(nombre.value==null||nombre.value===""){
-//         alerta.push('El campo "nombre" es obligatorio');
-//     }
-
-//     if(!email.test(correo.value)){
-//         alert('El campo "Correo Electronico" es obligatorio');
-//     }
-//     e.preventDefault();
-// })
-
 
 function validar(){ //valido el nombre
     var cambiar=false;
@@ -86,5 +25,13 @@ function validar(){ //valido el nombre
     
     document.getElementById('foto').className='invertir';
     alert('Gracias por contactarte con nosotros')
+
+    document.getElementById('contenedor').className='contenedorMensaje';
+
+    var contenido = document.formu.texto.value;
+
+    var padreViejo = document.getElementById('textCont');
+    padreViejo.innerHTML=contenido;
+    
     return false;
 }

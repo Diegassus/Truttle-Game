@@ -198,6 +198,32 @@ header .nav .dropdown:hover .dropdown-content {
     box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.5);
   }
 
+  .contenedorMensajeB{
+    display: none;
+  }
+
+  .contenedorMensaje{
+    display: block;
+    box-sizing: border-box;
+    background-color: #14213d;
+    color: #e5e5e5;
+    width: 95%;
+    margin: auto;
+    padding: 2%;
+    font: 1em sans-serif;
+    box-shadow: 16px 8px 16px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .contenedorMensaje .contenedorTexto{
+    font: 1em sans-serif;
+    margin-top: 25px;
+    background-color: #03102c;
+    padding: 2% 5%;
+  }
+
+
+
+
   footer{
     background-color: #03102c;
     text-align: center;
