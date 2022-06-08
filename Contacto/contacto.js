@@ -1,27 +1,43 @@
 
 function validar(){ //valido el nombre
-    var cambiar=false;
+    var mensaje="Es obligatorio llenar los siguientes campos:\n";
+    var valido=false;
     var nombre=document.formu.nombre.value.trim();
     if (!nombre){
-    alert("Tiene que escribir su nombre")
+    mensaje += "- Nombre\n";
     document.formu.nombre.focus()
-    return false; 
+    valido= false; 
     }
 
     var mail = document.formu.correo.value;
     var patronmail = /^\w+@\w+(\.\w{2,4})$/;
     if (!patronmail.test(mail)) {
-        alert('Ingrese una dirección Válida de Email');
+        mensaje += "- Escriba un correo valido\n";
         document.formu.correo.focus()
-        return false;
+       valido= false;
     }
 
     var texto = document.formu.texto.value.trim();
     if (texto===""||texto==null){
-        alert("Debe completar el campo de mensajes");
+        mensaje += "- Escriba su mensaje\n";
         document.formu.texto.focus()
-        return false; 
+        valido= false; 
     }
+
+    var viejo=document.getElementById('contErrores');
+    var nuevo=document.createElement('p');
+    var text=document.createTextNode(mensaje);
+    nuevo.appendChild(text);
+
+    if(valido==false){
+        viejo.className=('mal')
+        viejo.replaceChildren(nuevo);
+      //  viejo.appendChild(nuevo);
+    }else{
+        viejo.removeAttribute;
+        viejo.replaceChildren("");
+    }
+
     
     document.getElementById('foto').className='invertir';
     alert('Gracias por contactarte con nosotros')

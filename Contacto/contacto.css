@@ -221,7 +221,16 @@ header .nav .dropdown:hover .dropdown-content {
     padding: 2% 5%;
   }
 
+  .contErrores{
+    display: none;
+  }
 
+  .mal{
+    width: 80%;
+    background-color: #fca311;
+    color:#03102c;
+    font-family: sans-serif;
+  }
 
 
   footer{
