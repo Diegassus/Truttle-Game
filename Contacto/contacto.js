@@ -1,26 +1,25 @@
-
 function validar(){ //valido el nombre
     var mensaje="Es obligatorio llenar los siguientes campos:\n";
-    var valido=false;
+    var valido=true;
     var nombre=document.formu.nombre.value.trim();
     if (!nombre){
     mensaje += "- Nombre\n";
-    document.formu.nombre.focus()
+    document.formu.nombre.focus();
     valido= false; 
     }
 
     var mail = document.formu.correo.value;
     var patronmail = /^\w+@\w+(\.\w{2,4})$/;
     if (!patronmail.test(mail)) {
-        mensaje += "- Escriba un correo valido\n";
-        document.formu.correo.focus()
+        mensaje += "- Un correo valido\n";
+        document.formu.correo.focus();
        valido= false;
     }
 
     var texto = document.formu.texto.value.trim();
     if (texto===""||texto==null){
-        mensaje += "- Escriba su mensaje\n";
-        document.formu.texto.focus()
+        mensaje += "- Un mensaje\n";
+        document.formu.texto.focus();
         valido= false; 
     }
 
@@ -38,16 +37,19 @@ function validar(){ //valido el nombre
         viejo.replaceChildren("");
     }
 
-    
-    document.getElementById('foto').className='invertir';
-    alert('Gracias por contactarte con nosotros')
-
+    if(valido==true){
+document.getElementById('foto').className='invertir';
+    alert('Gracias por contactarte con nosotros');
     document.getElementById('contenedor').className='contenedorMensaje';
 
     var contenido = document.formu.texto.value;
 
     var padreViejo = document.getElementById('textCont');
     padreViejo.innerHTML=contenido;
+    }
+    
+
+    
     
     return false;
 }

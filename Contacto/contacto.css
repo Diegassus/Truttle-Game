@@ -226,7 +226,10 @@ header .nav .dropdown:hover .dropdown-content {
   }
 
   .mal{
+    border-radius: 5px;
+    padding: 8px;
     width: 80%;
+    margin: auto;
     background-color: #fca311;
     color:#03102c;
     font-family: sans-serif;
